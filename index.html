@@ -1,0 +1,2148 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO: основные мета-теги -->
+    <title>Стиль & Релакс — онлайн-запись к парикмахеру и массажисту</title>
+    <meta
+      name="description"
+      content="Стиль & Релакс — сервис онлайн-записи к парикмахеру и массажисту. Выберите услугу, мастера и удобное время за пару кликов. Стрижка, окрашивание, массаж в Москве."
+    />
+    <meta name="keywords" content="онлайн-запись, парикмахер, массажист, стрижка, окрашивание, массаж, Москва, Стиль и Релакс" />
+    <meta name="author" content="Стиль & Релакс" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Open Graph для соцсетей -->
+    <meta property="og:title" content="Стиль & Релакс — онлайн-запись к парикмахеру и массажисту" />
+    <meta property="og:description" content="Ваши красота и здоровье — в паре кликов. Выберите услугу, мастера и время." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+
+    <!-- Подключение Google Fonts: Playfair Display (заголовки) и Inter (основной текст) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ===================== ШАПКА (фиксированная) ===================== -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <!-- Логотип -->
+        <a href="#hero" class="logo" aria-label="Стиль и Релакс — на главную">
+          <span class="logo__mark" aria-hidden="true">S&amp;R</span>
+          <span class="logo__text">Стиль &amp; Релакс</span>
+        </a>
+
+        <!-- Навигация (якоря) -->
+        <nav class="nav" id="nav" aria-label="Основная навигация">
+          <a href="#hero" class="nav__link">Главная</a>
+          <a href="#services" class="nav__link">Услуги</a>
+          <a href="#masters" class="nav__link">Мастера</a>
+          <a href="#reviews" class="nav__link">Отзывы</a>
+          <a href="#contacts" class="nav__link">Контакты</a>
+          <a href="#booking" class="btn btn--gold nav__btn" id="navBookBtn">Записаться</a>
+        </nav>
+
+        <!-- Гамбургер для мобильных -->
+        <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- ===================== ПЕРВЫЙ ЭКРАН (Hero) ===================== -->
+      <section class="hero" id="hero">
+        <div class="hero__overlay"></div>
+        <div class="container hero__content">
+          <p class="hero__brand reveal">Стиль &amp; Релакс</p>
+          <h1 class="hero__title reveal">
+            Идеальная стрижка и глубокий массаж в удобное время
+          </h1>
+          <p class="hero__subtitle reveal">
+            Выберите услугу, мастера и время — мы позаботимся об остальном
+          </p>
+          <a href="#services" class="btn btn--gold btn--lg reveal" id="heroBtn">Выбрать услугу</a>
+        </div>
+        <a href="#advantages" class="hero__scroll" aria-label="Прокрутить вниз">
+          <span></span>
+        </a>
+      </section>
+
+      <!-- ===================== ПРЕИМУЩЕСТВА ===================== -->
+      <section class="advantages" id="advantages">
+        <div class="container">
+          <h2 class="section-title reveal">Почему выбирают нас</h2>
+          <p class="section-subtitle reveal">Мы делаем заботу о себе простой и приятной</p>
+
+          <div class="advantages__grid">
+            <!-- Карточка 1 -->
+            <article class="adv-card reveal">
+              <div class="adv-card__icon" aria-hidden="true">
+                <!-- Иконка: ножницы (опытные мастера) -->
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="6" cy="6" r="3" /><circle cx="6" cy="18" r="3" />
+                  <line x1="20" y1="4" x2="8.12" y2="15.88" /><line x1="14.47" y1="14.48" x2="20" y2="20" /><line x1="8.12" y1="8.12" x2="12" y2="12" />
+                </svg>
+              </div>
+              <h3 class="adv-card__title">Опытные мастера</h3>
+              <p class="adv-card__text">Стаж каждого специалиста — от 5 лет. Нам доверяют самое ценное.</p>
+            </article>
+
+            <!-- Карточка 2 -->
+            <article class="adv-card reveal">
+              <div class="adv-card__icon" aria-hidden="true">
+                <!-- Иконка: часы (удобная запись) -->
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="9" /><polyline points="12 7 12 12 15 14" />
+                </svg>
+              </div>
+              <h3 class="adv-card__title">Удобная онлайн-запись</h3>
+              <p class="adv-card__text">Запишитесь за 1 минуту — без звонков и ожидания на линии.</p>
+            </article>
+
+            <!-- Карточка 3 -->
+            <article class="adv-card reveal">
+              <div class="adv-card__icon" aria-hidden="true">
+                <!-- Иконка: календарь (гибкий график) -->
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="4" width="18" height="18" rx="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" />
+                </svg>
+              </div>
+              <h3 class="adv-card__title">Гибкий график</h3>
+              <p class="adv-card__text">Работаем с 9:00 до 21:00 — найдём время под ваш ритм жизни.</p>
+            </article>
+
+            <!-- Карточка 4 -->
+            <article class="adv-card reveal">
+              <div class="adv-card__icon" aria-hidden="true">
+                <!-- Иконка: сердце (персональный подход) -->
+                <svg viewBox="0 0 24 24" width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                </svg>
+              </div>
+              <h3 class="adv-card__title">Персональный подход</h3>
+              <p class="adv-card__text">Подберём услугу под ваш запрос, тип волос и пожелания.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== УСЛУГИ И ЦЕНЫ ===================== -->
+      <section class="services" id="services">
+        <div class="container">
+          <h2 class="section-title reveal">Услуги и цены</h2>
+          <p class="section-subtitle reveal">Прозрачные цены без скрытых доплат</p>
+
+          <!-- Переключатель вкладок -->
+          <div class="tabs reveal" role="tablist" aria-label="Типы услуг">
+            <button class="tab tab--active" role="tab" aria-selected="true" data-tab="hair" id="tabHair">
+              Парикмахерские услуги
+            </button>
+            <button class="tab" role="tab" aria-selected="false" data-tab="massage" id="tabMassage">
+              Массаж
+            </button>
+          </div>
+
+          <!-- Вкладка: парикмахерские -->
+          <div class="tab-panel tab-panel--active" role="tabpanel" aria-labelledby="tabHair" data-panel="hair">
+            <div class="services__grid">
+              <article class="service-card reveal">
+                <h3 class="service-card__title">Женская стрижка</h3>
+                <p class="service-card__desc">Стрижка любой сложности с учётом структуры волос и формы лица.</p>
+                <div class="service-card__bottom">
+                  <span class="service-card__price">от 2000 ₽</span>
+                  <button class="btn btn--outline service-card__btn" data-service-type="hair" data-service="Женская стрижка">Записаться</button>
+                </div>
+              </article>
+
+              <article class="service-card reveal">
+                <h3 class="service-card__title">Мужская стрижка</h3>
+                <p class="service-card__desc">Классические и современные мужские стрижки, оформление бороды.</p>
+                <div class="service-card__bottom">
+                  <span class="service-card__price">от 1500 ₽</span>
+                  <button class="btn btn--outline service-card__btn" data-service-type="hair" data-service="Мужская стрижка">Записаться</button>
+                </div>
+              </article>
+
+              <article class="service-card reveal">
+                <h3 class="service-card__title">Окрашивание</h3>
+                <p class="service-card__desc">Тонирование, мелирование, сложное окрашивание профессиональными красками.</p>
+                <div class="service-card__bottom">
+                  <span class="service-card__price">от 4000 ₽</span>
+                  <button class="btn btn--outline service-card__btn" data-service-type="hair" data-service="Окрашивание">Записаться</button>
+                </div>
+              </article>
+
+              <article class="service-card reveal">
+                <h3 class="service-card__title">Укладка</h3>
+                <p class="service-card__desc">Вечерняя или повседневная укладка, локоны, выпрямление.</p>
+                <div class="service-card__bottom">
+                  <span class="service-card__price">от 1200 ₽</span>
+                  <button class="btn btn--outline service-card__btn" data-service-type="hair" data-service="Укладка">Записаться</button>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Вкладка: массаж -->
+          <div class="tab-panel" role="tabpanel" aria-labelledby="tabMassage" data-panel="massage" hidden>
+            <div class="services__grid">
+              <article class="service-card reveal">
+                <h3 class="service-card__title">Классический массаж спины</h3>
+                <p class="service-card__desc">60 минут — снятие напряжения и улучшение кровообращения.</p>
+                <div class="service-card__bottom">
+                  <span class="service-card__price">2500 ₽</span>
+                  <button class="btn btn--outline service-card__btn" data-service-type="massage" data-service="Классический массаж спины">Записаться</button>
+                </div>
+              </article>
+
+              <article class="service-card reveal">
+                <h3 class="service-card__title">Лимфодренажный массаж</h3>
+                <p class="service-card__desc">90 минут — вывод лишней жидкости, улучшение тонуса и контуров.</p>
+                <div class="service-card__bottom">
+                  <span class="service-card__price">3500 ₽</span>
+                  <button class="btn btn--outline service-card__btn" data-service-type="massage" data-service="Лимфодренажный массаж">Записаться</button>
+                </div>
+              </article>
+
+              <article class="service-card reveal">
+                <h3 class="service-card__title">Массаж шейно-воротниковой зоны</h3>
+                <p class="service-card__desc">30 минут — избавление от скованности и головной боли.</p>
+                <div class="service-card__bottom">
+                  <span class="service-card__price">1800 ₽</span>
+                  <button class="btn btn--outline service-card__btn" data-service-type="massage" data-service="Массаж шейно-воротниковой зоны">Записаться</button>
+                </div>
+              </article>
+
+              <article class="service-card reveal">
+                <h3 class="service-card__title">Общий расслабляющий массаж</h3>
+                <p class="service-card__desc">90 минут — полное расслабление тела и снятие стресса.</p>
+                <div class="service-card__bottom">
+                  <span class="service-card__price">3200 ₽</span>
+                  <button class="btn btn--outline service-card__btn" data-service-type="massage" data-service="Общий расслабляющий массаж">Записаться</button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== НАШИ МАСТЕРА ===================== -->
+      <section class="masters" id="masters">
+        <div class="container">
+          <h2 class="section-title reveal">Наши мастера</h2>
+          <p class="section-subtitle reveal">Профессионалы, которым хочется довериться</p>
+
+          <div class="masters__grid">
+            <!-- Мастер 1 -->
+            <article class="master-card reveal">
+              <div class="master-card__photo">
+                <img
+                  src="https://images.unsplash.com/photo-1580618672591-ebb180c84e79?auto=format&fit=crop&w=600&q=80"
+                  alt="Анна — парикмахер-стилист"
+                  loading="lazy"
+                />
+              </div>
+              <div class="master-card__body">
+                <h3 class="master-card__name">Анна</h3>
+                <p class="master-card__spec">Парикмахер-стилист</p>
+                <button class="btn btn--outline master-card__btn" data-master="Анна">Записаться к мастеру</button>
+              </div>
+            </article>
+
+            <!-- Мастер 2 -->
+            <article class="master-card reveal">
+              <div class="master-card__photo">
+                <img
+                  src="https://images.unsplash.com/photo-1503951914875-452d8d499e3e?auto=format&fit=crop&w=600&q=80"
+                  alt="Дмитрий — барбер"
+                  loading="lazy"
+                />
+              </div>
+              <div class="master-card__body">
+                <h3 class="master-card__name">Дмитрий</h3>
+                <p class="master-card__spec">Барбер</p>
+                <button class="btn btn--outline master-card__btn" data-master="Дмитрий">Записаться к мастеру</button>
+              </div>
+            </article>
+
+            <!-- Мастер 3 -->
+            <article class="master-card reveal">
+              <div class="master-card__photo">
+                <img
+                  src="https://images.unsplash.com/photo-1622255597818-6016b84e6a8f?auto=format&fit=crop&w=600&q=80"
+                  alt="Елена — массажист"
+                  loading="lazy"
+                />
+              </div>
+              <div class="master-card__body">
+                <h3 class="master-card__name">Елена</h3>
+                <p class="master-card__spec">Массажист (классический, лимфодренажный)</p>
+                <button class="btn btn--outline master-card__btn" data-master="Елена">Записаться к мастеру</button>
+              </div>
+            </article>
+
+            <!-- Мастер 4 -->
+            <article class="master-card reveal">
+              <div class="master-card__photo">
+                <img
+                  src="https://images.unsplash.com/photo-1551836022-d5d88e9213df?auto=format&fit=crop&w=600&q=80"
+                  alt="Ольга — массажист-реабилитолог"
+                  loading="lazy"
+                />
+              </div>
+              <div class="master-card__body">
+                <h3 class="master-card__name">Ольга</h3>
+                <p class="master-card__spec">Массажист-реабилитолог</p>
+                <button class="btn btn--outline master-card__btn" data-master="Ольга">Записаться к мастеру</button>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== ФОРМА ОНЛАЙН-ЗАПИСИ ===================== -->
+      <section class="booking" id="booking">
+        <div class="container">
+          <h2 class="section-title reveal">Онлайн-запись</h2>
+          <p class="section-subtitle reveal">Заполните форму — мы перезвоним для подтверждения</p>
+
+          <!-- Сама форма; success-сообщение показывается вместо неё после отправки -->
+          <div class="booking__wrap reveal">
+            <form class="booking-form" id="bookingForm" novalidate>
+              <!-- Тип услуги -->
+              <div class="field">
+                <label for="serviceType" class="field__label">Тип услуги</label>
+                <select id="serviceType" class="field__input" required>
+                  <option value="">— выберите —</option>
+                  <option value="hair">Парикмахерские услуги</option>
+                  <option value="massage">Массаж</option>
+                </select>
+                <span class="field__error" data-error-for="serviceType"></span>
+              </div>
+
+              <!-- Услуга (обновляется динамически) -->
+              <div class="field">
+                <label for="service" class="field__label">Услуга</label>
+                <select id="service" class="field__input" required disabled>
+                  <option value="">— сначала выберите тип —</option>
+                </select>
+                <span class="field__error" data-error-for="service"></span>
+              </div>
+
+              <!-- Мастер -->
+              <div class="field">
+                <label for="master" class="field__label">Мастер</label>
+                <select id="master" class="field__input" required>
+                  <option value="">— любой свободный —</option>
+                  <option value="Анна">Анна — парикмахер-стилист</option>
+                  <option value="Дмитрий">Дмитрий — барбер</option>
+                  <option value="Елена">Елена — массажист</option>
+                  <option value="Ольга">Ольга — массажист-реабилитолог</option>
+                </select>
+                <span class="field__error" data-error-for="master"></span>
+              </div>
+
+              <!-- Дата (календарь на чистом JS) -->
+              <div class="field">
+                <label for="date" class="field__label">Дата</label>
+                <div class="datepicker">
+                  <input
+                    type="text"
+                    id="date"
+                    class="field__input"
+                    placeholder="Выберите дату"
+                    readonly
+                    required
+                    aria-haspopup="dialog"
+                  />
+                  <!-- Календарь рендерится сюда -->
+                  <div class="datepicker__calendar" id="calendar" role="dialog" aria-label="Выбор даты" hidden></div>
+                </div>
+                <span class="field__error" data-error-for="date"></span>
+              </div>
+
+              <!-- Время (слоты) -->
+              <div class="field">
+                <label for="time" class="field__label">Время</label>
+                <select id="time" class="field__input" required disabled>
+                  <option value="">— выберите дату —</option>
+                </select>
+                <span class="field__error" data-error-for="time"></span>
+              </div>
+
+              <!-- Имя -->
+              <div class="field">
+                <label for="name" class="field__label">Имя</label>
+                <input type="text" id="name" class="field__input" placeholder="Как к вам обращаться" required minlength="2" />
+                <span class="field__error" data-error-for="name"></span>
+              </div>
+
+              <!-- Телефон с маской +7 -->
+              <div class="field">
+                <label for="phone" class="field__label">Телефон</label>
+                <input type="tel" id="phone" class="field__input" placeholder="+7 (___) ___-__-__" required />
+                <span class="field__error" data-error-for="phone"></span>
+              </div>
+
+              <!-- Email -->
+              <div class="field">
+                <label for="email" class="field__label">Email</label>
+                <input type="email" id="email" class="field__input" placeholder="you@example.com" required />
+                <span class="field__error" data-error-for="email"></span>
+              </div>
+
+              <button type="submit" class="btn btn--gold btn--lg btn--block" id="submitBtn">Записаться</button>
+            </form>
+
+            <!-- Сообщение об успехе (скрыто до отправки) -->
+            <div class="booking-success" id="bookingSuccess" hidden>
+              <div class="booking-success__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="56" height="56" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10" /><polyline points="9 12 12 15 16 9" />
+                </svg>
+              </div>
+              <h3>Спасибо!</h3>
+              <p>Мы свяжемся с вами в ближайшее время для подтверждения записи.</p>
+              <button class="btn btn--outline" id="resetBtn">Записаться снова</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== ОТЗЫВЫ (слайдер) ===================== -->
+      <section class="reviews" id="reviews">
+        <div class="container">
+          <h2 class="section-title reveal">Отзывы наших клиентов</h2>
+          <p class="section-subtitle reveal">Нам доверяют — и мы это ценим</p>
+
+          <div class="slider reveal" id="reviewsSlider">
+            <div class="slider__track" id="sliderTrack">
+              <!-- Слайды рендерятся из JS -->
+            </div>
+
+            <!-- Стрелки -->
+            <button class="slider__arrow slider__arrow--prev" id="sliderPrev" aria-label="Предыдущий отзыв">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
+            </button>
+            <button class="slider__arrow slider__arrow--next" id="sliderNext" aria-label="Следующий отзыв">
+              <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6" /></svg>
+            </button>
+
+            <!-- Точки-индикаторы -->
+            <div class="slider__dots" id="sliderDots"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== КОНТАКТЫ И КАРТА ===================== -->
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <h2 class="section-title reveal">Контакты</h2>
+          <p class="section-subtitle reveal">Будем рады видеть вас в нашем салоне</p>
+
+          <div class="contacts__grid">
+            <!-- Контактная информация -->
+            <div class="contacts__info reveal">
+              <ul class="contacts__list">
+                <li>
+                  <span class="contacts__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" /><circle cx="12" cy="10" r="3" /></svg>
+                  </span>
+                  <span>ул. Примерная, д. 15, Москва</span>
+                </li>
+                <li>
+                  <span class="contacts__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z" /></svg>
+                  </span>
+                  <a href="tel:+79991234567" class="contacts__link">+7 (999) 123-45-67</a>
+                </li>
+                <li>
+                  <span class="contacts__icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" /><polyline points="22 6 12 13 2 6" /></svg>
+                  </span>
+                  <a href="mailto:info@style-relax.ru" class="contacts__link">info@style-relax.ru</a>
+                </li>
+              </ul>
+
+              <!-- Соцсети -->
+              <div class="socials">
+                <a href="#" class="socials__link" aria-label="Instagram" title="Instagram">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" /><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" /><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" /></svg>
+                </a>
+                <a href="#" class="socials__link" aria-label="Telegram" title="Telegram">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M21.94 4.6l-3.3 15.57c-.25 1.1-.9 1.37-1.83.85l-5.06-3.73-2.44 2.35c-.27.27-.5.5-1 .5l.36-5.16 9.4-8.5c.4-.36-.09-.56-.63-.2L5.36 13.2.37 11.64c-1.08-.34-1.1-1.08.23-1.6L20.53 2.9c.9-.33 1.69.2 1.4 1.7z" /></svg>
+                </a>
+                <a href="#" class="socials__link" aria-label="WhatsApp" title="WhatsApp">
+                  <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M17.5 14.4c-.3-.15-1.77-.87-2.04-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.89-.79-1.49-1.77-1.66-2.07-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51-.17-.01-.37-.01-.57-.01-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.87 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.31 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.09 1.77-.72 2.02-1.42.25-.7.25-1.3.17-1.42-.07-.13-.27-.2-.57-.35zM12 2a10 10 0 0 0-8.6 15.06L2 22l5.06-1.34A10 10 0 1 0 12 2z" /></svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Карта (статичный placeholder) -->
+            <div class="contacts__map reveal">
+              <img
+                src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=900&q=80"
+                alt="Карта — ул. Примерная, д. 15, Москва"
+                loading="lazy"
+              />
+              <div class="contacts__map-pin" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="36" height="36" fill="#C9A96E" stroke="#1E3A3F" stroke-width="1.5"><path d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z" /><circle cx="12" cy="9" r="2.5" fill="#1E3A3F" /></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== ФУТЕР ===================== -->
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="footer__copy">© 2026 Стиль &amp; Релакс. Все права защищены</p>
+        <a href="#" class="footer__link">Политика конфиденциальности</a>
+      </div>
+    </footer>
+
+    <!-- ===================== Кнопка «Наверх» ===================== -->
+    <button class="to-top" id="toTop" aria-label="Наверх" hidden>
+      <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="18 15 12 9 6 15" /></svg>
+    </button>
+
+    <!-- ===================== СТИЛИ ===================== -->
+    <style>
+      /* ---------- CSS-переменные: цветовая система ---------- */
+      :root {
+        --green: #1e3a3f;          /* тёмно-зелёный — основной */
+        --green-light: #2a5560;
+        --green-dark: #15282c;
+        --gold: #c9a96e;          /* акцентный золотой */
+        --gold-light: #d9bd8a;
+        --gold-dark: #b5945a;
+        --white: #ffffff;
+        --bg: #f7f5f0;             /* светлый фон секций */
+        --text: #1e3a3f;
+        --text-muted: #5a6f74;
+        --border: #e0dccf;
+        --success: #2e7d5b;
+        --error: #c0392b;
+        --shadow: 0 8px 30px rgba(30, 58, 63, 0.12);
+        --shadow-lg: 0 20px 60px rgba(30, 58, 63, 0.18);
+        --radius: 14px;
+        --radius-sm: 10px;
+        --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      /* ---------- Сброс ---------- */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        scroll-behavior: smooth;          /* плавный скролл по якорям */
+        scroll-padding-top: 80px;         /* отступ под фиксированной шапкой */
+      }
+
+      body {
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        font-size: 16px;
+        line-height: 1.6;
+        color: var(--text);
+        background: var(--white);
+        overflow-x: hidden;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      h1, h2, h3 {
+        font-family: 'Playfair Display', Georgia, serif;
+        line-height: 1.2;
+        font-weight: 600;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      button {
+        font-family: inherit;
+        cursor: pointer;
+        border: none;
+        background: none;
+      }
+
+      /* ---------- Контейнер ---------- */
+      .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      /* ---------- Кнопки ---------- */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 12px 28px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        font-family: 'Inter', sans-serif;
+        border-radius: 50px;
+        transition: all var(--transition);
+        white-space: nowrap;
+      }
+      .btn--gold {
+        background: var(--gold);
+        color: var(--green-dark);
+        box-shadow: 0 4px 16px rgba(201, 169, 110, 0.35);
+      }
+      .btn--gold:hover {
+        background: var(--gold-light);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 24px rgba(201, 169, 110, 0.5);
+      }
+      .btn--outline {
+        background: transparent;
+        color: var(--green);
+        border: 1.5px solid var(--green);
+      }
+      .btn--outline:hover {
+        background: var(--green);
+        color: var(--white);
+        transform: translateY(-2px);
+      }
+      .btn--lg {
+        padding: 16px 36px;
+        font-size: 1.05rem;
+      }
+      .btn--block {
+        width: 100%;
+      }
+
+      /* ---------- Заголовки секций ---------- */
+      .section-title {
+        font-size: clamp(1.8rem, 4vw, 2.6rem);
+        text-align: center;
+        color: var(--green);
+        margin-bottom: 8px;
+      }
+      .section-subtitle {
+        text-align: center;
+        color: var(--text-muted);
+        font-size: 1.05rem;
+        margin-bottom: 48px;
+      }
+
+      /* ---------- Анимация появления (Intersection Observer) ---------- */
+      .reveal {
+        opacity: 0;
+        transform: translateY(40px);
+        transition: opacity 0.7s ease, transform 0.7s ease;
+      }
+      .reveal.visible {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* ===================== ШАПКА ===================== */
+      .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+        background: transparent;
+        transition: background var(--transition), box-shadow var(--transition), padding var(--transition);
+        padding: 18px 0;
+      }
+      /* При скролле шапка получает фон */
+      .header.scrolled {
+        background: rgba(30, 58, 63, 0.97);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        padding: 12px 0;
+      }
+      .header__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      /* Логотип */
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--white);
+      }
+      .logo__mark {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 42px;
+        height: 42px;
+        border: 2px solid var(--gold);
+        border-radius: 50%;
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 0.85rem;
+        color: var(--gold);
+        flex-shrink: 0;
+      }
+      .logo__text {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.3rem;
+        font-weight: 600;
+        letter-spacing: 0.02em;
+      }
+
+      /* Навигация */
+      .nav {
+        display: flex;
+        align-items: center;
+        gap: 32px;
+      }
+      .nav__link {
+        color: var(--white);
+        font-size: 0.95rem;
+        font-weight: 500;
+        position: relative;
+        transition: color var(--transition);
+      }
+      .nav__link::after {
+        content: '';
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: var(--gold);
+        transition: width var(--transition);
+      }
+      .nav__link:hover {
+        color: var(--gold);
+      }
+      .nav__link:hover::after {
+        width: 100%;
+      }
+      .nav__btn {
+        padding: 10px 24px;
+        font-size: 0.9rem;
+      }
+
+      /* Гамбургер */
+      .burger {
+        display: none;
+        flex-direction: column;
+        gap: 5px;
+        padding: 6px;
+        z-index: 1100;
+      }
+      .burger span {
+        display: block;
+        width: 26px;
+        height: 3px;
+        background: var(--white);
+        border-radius: 2px;
+        transition: all var(--transition);
+      }
+      .burger.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+      }
+      .burger.active span:nth-child(2) {
+        opacity: 0;
+      }
+      .burger.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+      }
+
+      /* ===================== HERO ===================== */
+      .hero {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        background: url('https://images.unsplash.com/photo-1633681926022-84c23e6cb9d6?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+        background-attachment: fixed;
+      }
+      .hero__overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(135deg, rgba(30, 58, 63, 0.85) 0%, rgba(30, 58, 63, 0.6) 100%);
+      }
+      .hero__content {
+        position: relative;
+        z-index: 2;
+        max-width: 760px;
+      }
+      .hero__brand {
+        color: var(--gold);
+        font-family: 'Playfair Display', serif;
+        font-size: 1.1rem;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+      }
+      .hero__title {
+        color: var(--white);
+        font-size: clamp(2rem, 5.5vw, 3.8rem);
+        margin-bottom: 20px;
+      }
+      .hero__subtitle {
+        color: rgba(255, 255, 255, 0.9);
+        font-size: clamp(1rem, 2vw, 1.3rem);
+        margin-bottom: 36px;
+        max-width: 560px;
+      }
+
+      /* Индикатор скролла */
+      .hero__scroll {
+        position: absolute;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 2;
+        width: 26px;
+        height: 44px;
+        border: 2px solid rgba(255, 255, 255, 0.6);
+        border-radius: 14px;
+        display: flex;
+        justify-content: center;
+        padding-top: 8px;
+      }
+      .hero__scroll span {
+        display: block;
+        width: 4px;
+        height: 8px;
+        background: var(--gold);
+        border-radius: 2px;
+        animation: scrollDot 1.6s infinite;
+      }
+      @keyframes scrollDot {
+        0% { opacity: 0; transform: translateY(-4px); }
+        50% { opacity: 1; }
+        100% { opacity: 0; transform: translateY(12px); }
+      }
+
+      /* ===================== ПРЕИМУЩЕСТВА ===================== */
+      .advantages {
+        padding: 90px 0;
+        background: var(--bg);
+      }
+      .advantages__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+      }
+      .adv-card {
+        background: var(--white);
+        border-radius: var(--radius);
+        padding: 36px 24px;
+        text-align: center;
+        box-shadow: var(--shadow);
+        transition: transform var(--transition), box-shadow var(--transition);
+      }
+      .adv-card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-lg);
+      }
+      .adv-card__icon {
+        width: 76px;
+        height: 76px;
+        margin: 0 auto 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: var(--green);
+        color: var(--gold);
+        transition: transform var(--transition), background var(--transition);
+      }
+      /* Анимация иконки при наведении */
+      .adv-card:hover .adv-card__icon {
+        transform: scale(1.1) rotate(-6deg);
+        background: var(--gold);
+        color: var(--green);
+      }
+      .adv-card__title {
+        font-size: 1.2rem;
+        color: var(--green);
+        margin-bottom: 10px;
+      }
+      .adv-card__text {
+        color: var(--text-muted);
+        font-size: 0.92rem;
+      }
+
+      /* ===================== УСЛУГИ ===================== */
+      .services {
+        padding: 90px 0;
+        background: var(--white);
+      }
+      .tabs {
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+        margin-bottom: 40px;
+        flex-wrap: wrap;
+      }
+      .tab {
+        padding: 12px 32px;
+        font-size: 1rem;
+        font-weight: 600;
+        color: var(--green);
+        border: 2px solid var(--green);
+        border-radius: 50px;
+        transition: all var(--transition);
+      }
+      .tab:hover {
+        background: var(--green);
+        color: var(--white);
+      }
+      .tab--active {
+        background: var(--green);
+        color: var(--white);
+      }
+      .tab-panel {
+        display: none;
+        animation: fadeIn 0.4s ease;
+      }
+      .tab-panel--active {
+        display: block;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .services__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+      }
+      .service-card {
+        background: var(--bg);
+        border-radius: var(--radius);
+        padding: 28px 22px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid var(--border);
+        transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+      }
+      .service-card:hover {
+        transform: translateY(-6px);
+        box-shadow: var(--shadow);
+        border-color: var(--gold);
+      }
+      .service-card__title {
+        font-size: 1.25rem;
+        color: var(--green);
+        margin-bottom: 10px;
+      }
+      .service-card__desc {
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        flex-grow: 1;
+        margin-bottom: 20px;
+      }
+      .service-card__bottom {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+      }
+      .service-card__price {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: var(--gold-dark);
+      }
+      .service-card__btn {
+        padding: 8px 18px;
+        font-size: 0.85rem;
+      }
+
+      /* ===================== МАСТЕРА ===================== */
+      .masters {
+        padding: 90px 0;
+        background: var(--bg);
+      }
+      .masters__grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+      }
+      .master-card {
+        background: var(--white);
+        border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        transition: transform var(--transition), box-shadow var(--transition);
+      }
+      .master-card:hover {
+        transform: translateY(-8px);
+        box-shadow: var(--shadow-lg);
+      }
+      .master-card__photo {
+        aspect-ratio: 3 / 4;
+        overflow: hidden;
+      }
+      .master-card__photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: transform 0.6s ease;
+      }
+      .master-card:hover .master-card__photo img {
+        transform: scale(1.05);
+      }
+      .master-card__body {
+        padding: 22px 20px;
+        text-align: center;
+      }
+      .master-card__name {
+        font-size: 1.3rem;
+        color: var(--green);
+        margin-bottom: 6px;
+      }
+      .master-card__spec {
+        color: var(--text-muted);
+        font-size: 0.88rem;
+        margin-bottom: 18px;
+        min-height: 40px;
+      }
+      .master-card__btn {
+        width: 100%;
+        padding: 10px 16px;
+        font-size: 0.85rem;
+      }
+
+      /* ===================== ФОРМА ЗАПИСИ ===================== */
+      .booking {
+        padding: 90px 0;
+        background: var(--green);
+        color: var(--white);
+      }
+      .booking .section-title,
+      .booking .section-subtitle {
+        color: var(--white);
+      }
+      .booking__wrap {
+        max-width: 640px;
+        margin: 0 auto;
+        background: rgba(255, 255, 255, 0.06);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(201, 169, 110, 0.25);
+        border-radius: 20px;
+        padding: 40px 32px;
+      }
+      .booking-form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+      }
+      .field {
+        display: flex;
+        flex-direction: column;
+      }
+      .field--full {
+        grid-column: 1 / -1;
+      }
+      .field__label {
+        font-size: 0.85rem;
+        font-weight: 500;
+        margin-bottom: 6px;
+        color: rgba(255, 255, 255, 0.85);
+      }
+      .field__input {
+        padding: 12px 14px;
+        font-size: 0.95rem;
+        font-family: inherit;
+        color: var(--green);
+        background: var(--white);
+        border: 1.5px solid transparent;
+        border-radius: var(--radius-sm);
+        transition: border-color var(--transition), box-shadow var(--transition);
+        width: 100%;
+      }
+      .field__input:focus {
+        outline: none;
+        border-color: var(--gold);
+        box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.2);
+      }
+      .field__input:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
+      .field__input--error {
+        border-color: var(--error);
+      }
+      .field__error {
+        color: #ff8a7a;
+        font-size: 0.8rem;
+        margin-top: 4px;
+        min-height: 18px;
+      }
+      #submitBtn {
+        grid-column: 1 / -1;
+        margin-top: 8px;
+      }
+
+      /* ---------- Кастомный календарь ---------- */
+      .datepicker {
+        position: relative;
+      }
+      .datepicker__calendar {
+        position: absolute;
+        top: calc(100% + 6px);
+        left: 0;
+        z-index: 50;
+        background: var(--white);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow-lg);
+        padding: 16px;
+        width: 300px;
+        max-width: calc(100vw - 60px);
+      }
+      .cal__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 12px;
+      }
+      .cal__title {
+        font-family: 'Playfair Display', serif;
+        font-size: 1rem;
+        color: var(--green);
+        font-weight: 600;
+      }
+      .cal__nav {
+        width: 32px;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: var(--green);
+        transition: background var(--transition);
+      }
+      .cal__nav:hover {
+        background: var(--bg);
+      }
+      .cal__weekdays,
+      .cal__days {
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        gap: 2px;
+      }
+      .cal__weekdays {
+        margin-bottom: 6px;
+      }
+      .cal__weekday {
+        text-align: center;
+        font-size: 0.75rem;
+        font-weight: 600;
+        color: var(--text-muted);
+        padding: 4px 0;
+      }
+      .cal__day {
+        aspect-ratio: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.85rem;
+        color: var(--green);
+        border-radius: 50%;
+        transition: background var(--transition), color var(--transition);
+        cursor: pointer;
+      }
+      .cal__day:hover:not(.cal__day--disabled):not(.cal__day--empty) {
+        background: var(--gold);
+        color: var(--white);
+      }
+      .cal__day--empty {
+        cursor: default;
+      }
+      .cal__day--disabled {
+        color: #ccc;
+        cursor: not-allowed;
+      }
+      .cal__day--today {
+        font-weight: 700;
+        border: 1.5px solid var(--gold);
+      }
+      .cal__day--selected {
+        background: var(--green);
+        color: var(--white);
+        font-weight: 600;
+      }
+
+      /* ---------- Сообщение об успехе ---------- */
+      .booking-success {
+        text-align: center;
+        padding: 40px 20px;
+      }
+      .booking-success__icon {
+        color: var(--gold);
+        margin-bottom: 20px;
+        animation: popIn 0.5s ease;
+      }
+      @keyframes popIn {
+        0% { transform: scale(0); opacity: 0; }
+        70% { transform: scale(1.1); }
+        100% { transform: scale(1); opacity: 1; }
+      }
+      .booking-success h3 {
+        font-size: 1.8rem;
+        color: var(--white);
+        margin-bottom: 12px;
+      }
+      .booking-success p {
+        color: rgba(255, 255, 255, 0.85);
+        font-size: 1.05rem;
+        margin-bottom: 28px;
+      }
+
+      /* ===================== ОТЗЫВЫ ===================== */
+      .reviews {
+        padding: 90px 0;
+        background: var(--bg);
+      }
+      .slider {
+        position: relative;
+        max-width: 800px;
+        margin: 0 auto;
+        overflow: hidden;
+      }
+      .slider__track {
+        display: flex;
+        transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      .review-slide {
+        min-width: 100%;
+        padding: 0 16px;
+      }
+      .review-card {
+        background: var(--white);
+        border-radius: var(--radius);
+        padding: 36px 32px;
+        text-align: center;
+        box-shadow: var(--shadow);
+      }
+      .review-card__stars {
+        display: flex;
+        justify-content: center;
+        gap: 4px;
+        margin-bottom: 18px;
+      }
+      .review-card__stars svg {
+        width: 22px;
+        height: 22px;
+        fill: var(--gold);
+      }
+      .review-card__text {
+        font-size: 1.05rem;
+        line-height: 1.7;
+        color: var(--text);
+        margin-bottom: 20px;
+        font-style: italic;
+      }
+      .review-card__author {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.15rem;
+        font-weight: 600;
+        color: var(--green);
+      }
+
+      .slider__arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 46px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: var(--white);
+        color: var(--green);
+        box-shadow: var(--shadow);
+        z-index: 5;
+        transition: all var(--transition);
+      }
+      .slider__arrow:hover {
+        background: var(--gold);
+        color: var(--white);
+      }
+      .slider__arrow--prev { left: -10px; }
+      .slider__arrow--next { right: -10px; }
+
+      .slider__dots {
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        margin-top: 24px;
+      }
+      .slider__dot {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: var(--border);
+        transition: all var(--transition);
+      }
+      .slider__dot.active {
+        background: var(--gold);
+        width: 28px;
+        border-radius: 5px;
+      }
+
+      /* ===================== КОНТАКТЫ ===================== */
+      .contacts {
+        padding: 90px 0;
+        background: var(--white);
+      }
+      .contacts__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 48px;
+        align-items: center;
+      }
+      .contacts__list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        margin-bottom: 32px;
+      }
+      .contacts__list li {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        font-size: 1.05rem;
+        color: var(--text);
+      }
+      .contacts__icon {
+        width: 44px;
+        height: 44px;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: var(--green);
+        color: var(--gold);
+        transition: transform var(--transition);
+      }
+      .contacts__list li:hover .contacts__icon {
+        transform: scale(1.1) rotate(-5deg);
+        background: var(--gold);
+        color: var(--green);
+      }
+      .contacts__link {
+        color: var(--green);
+        font-weight: 500;
+        transition: color var(--transition);
+      }
+      .contacts__link:hover {
+        color: var(--gold-dark);
+      }
+      .socials {
+        display: flex;
+        gap: 14px;
+      }
+      .socials__link {
+        width: 46px;
+        height: 46px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: var(--green);
+        color: var(--gold);
+        transition: all var(--transition);
+      }
+      .socials__link:hover {
+        background: var(--gold);
+        color: var(--white);
+        transform: translateY(-4px);
+      }
+      .contacts__map {
+        position: relative;
+        border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: var(--shadow);
+        aspect-ratio: 4 / 3;
+      }
+      .contacts__map img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        filter: grayscale(0.3) brightness(0.95);
+      }
+      .contacts__map-pin {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        animation: bounce 2s infinite;
+      }
+      @keyframes bounce {
+        0%, 100% { transform: translate(-50%, -100%); }
+        50% { transform: translate(-50%, -110%); }
+      }
+
+      /* ===================== ФУТЕР ===================== */
+      .footer {
+        background: var(--green-dark);
+        color: rgba(255, 255, 255, 0.7);
+        padding: 32px 0;
+      }
+      .footer__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .footer__copy {
+        font-size: 0.9rem;
+      }
+      .footer__link {
+        font-size: 0.9rem;
+        color: var(--gold);
+        transition: color var(--transition);
+      }
+      .footer__link:hover {
+        color: var(--gold-light);
+        text-decoration: underline;
+      }
+
+      /* ===================== Кнопка «Наверх» ===================== */
+      .to-top {
+        position: fixed;
+        bottom: 28px;
+        right: 28px;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: var(--gold);
+        color: var(--green-dark);
+        box-shadow: var(--shadow-lg);
+        z-index: 900;
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity var(--transition), transform var(--transition), background var(--transition);
+      }
+      .to-top.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      .to-top:hover {
+        background: var(--gold-light);
+      }
+
+      /* ===================== АДАПТИВ (mobile-first правки) ===================== */
+
+      /* Планшеты */
+      @media (max-width: 980px) {
+        .advantages__grid,
+        .services__grid,
+        .masters__grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+        .contacts__grid {
+          grid-template-columns: 1fr;
+          gap: 32px;
+        }
+        .contacts__info {
+          order: 2;
+        }
+        .contacts__map {
+          order: 1;
+        }
+      }
+
+      /* Мобильные */
+      @media (max-width: 768px) {
+        /* Гамбургер показывается, навигация скрывается в панель */
+        .burger {
+          display: flex;
+        }
+        .nav {
+          position: fixed;
+          top: 0;
+          right: -100%;
+          width: 80%;
+          max-width: 320px;
+          height: 100vh;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          gap: 24px;
+          padding: 40px;
+          background: var(--green-dark);
+          transition: right 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+          box-shadow: -10px 0 40px rgba(0, 0, 0, 0.3);
+        }
+        .nav.open {
+          right: 0;
+        }
+        .nav__link {
+          font-size: 1.1rem;
+        }
+        .nav__btn {
+          width: 100%;
+          text-align: center;
+        }
+
+        .hero {
+          background-attachment: scroll; /* фикс для мобильных */
+        }
+
+        .booking-form {
+          grid-template-columns: 1fr;
+        }
+
+        .slider__arrow--prev { left: 4px; }
+        .slider__arrow--next { right: 4px; }
+      }
+
+      /* Очень маленькие экраны */
+      @media (max-width: 480px) {
+        .advantages__grid,
+        .services__grid,
+        .masters__grid {
+          grid-template-columns: 1fr;
+        }
+        .logo__text {
+          font-size: 1.05rem;
+        }
+        .logo__mark {
+          width: 36px;
+          height: 36px;
+          font-size: 0.75rem;
+        }
+        .booking__wrap {
+          padding: 28px 18px;
+        }
+        .footer__inner {
+          flex-direction: column;
+          text-align: center;
+        }
+        .to-top {
+          bottom: 18px;
+          right: 18px;
+          width: 44px;
+          height: 44px;
+        }
+      }
+
+      /* Уважение к настройкам «уменьшить анимацию» */
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          animation-duration: 0.01ms !important;
+          transition-duration: 0.01ms !important;
+        }
+        .reveal {
+          opacity: 1;
+          transform: none;
+        }
+      }
+    </style>
+
+    <!-- ===================== СКРИПТЫ ===================== -->
+    <script>
+      'use strict';
+
+      /* ============================================================
+         1. ДАННЫЕ УСЛУГ (используются и в табах, и в форме)
+         ============================================================ */
+      const SERVICES = {
+        hair: [
+          'Женская стрижка',
+          'Мужская стрижка',
+          'Окрашивание',
+          'Укладка',
+        ],
+        massage: [
+          'Классический массаж спины',
+          'Лимфодренажный массаж',
+          'Массаж шейно-воротниковой зоны',
+          'Общий расслабляющий массаж',
+        ],
+      };
+
+      /* Доступные временные слоты (эмуляция) */
+      const TIME_SLOTS = [
+        '10:00', '11:30', '13:00', '14:30', '16:00', '17:30', '19:00', '20:30',
+      ];
+
+      /* ============================================================
+         2. ШАПКА: фон при скролле + кнопка «Наверх»
+         ============================================================ */
+      const header = document.getElementById('header');
+      const toTop = document.getElementById('toTop');
+
+      function onScroll() {
+        const y = window.scrollY;
+        /* Шапка получает фон после прокрутки на 60px */
+        header.classList.toggle('scrolled', y > 60);
+        /* Кнопка «Наверх» появляется после 500px */
+        const show = y > 500;
+        toTop.classList.toggle('show', show);
+        toTop.hidden = !show;
+      }
+      window.addEventListener('scroll', onScroll, { passive: true });
+
+      /* Плавный скролл наверх */
+      toTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      /* ============================================================
+         3. ГАМБУРГЕР-МЕНЮ
+         ============================================================ */
+      const burger = document.getElementById('burger');
+      const nav = document.getElementById('nav');
+
+      burger.addEventListener('click', () => {
+        const isOpen = nav.classList.toggle('open');
+        burger.classList.toggle('active', isOpen);
+        burger.setAttribute('aria-expanded', String(isOpen));
+      });
+
+      /* Закрытие меню при клике по ссылке */
+      nav.querySelectorAll('a, .nav__btn').forEach((el) => {
+        el.addEventListener('click', () => {
+          nav.classList.remove('open');
+          burger.classList.remove('active');
+          burger.setAttribute('aria-expanded', 'false');
+        });
+      });
+
+      /* ============================================================
+         4. INTERSECTION OBSERVER — анимация появления блоков
+         ============================================================ */
+      const revealEls = document.querySelectorAll('.reveal');
+      const io = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              io.unobserve(entry.target); /* анимация один раз */
+            }
+          });
+        },
+        { threshold: 0.15, rootMargin: '0px 0px -50px 0px' }
+      );
+      revealEls.forEach((el) => io.observe(el));
+
+      /* ============================================================
+         5. ТАБЫ УСЛУГ
+         ============================================================ */
+      const tabs = document.querySelectorAll('.tab');
+      const panels = document.querySelectorAll('.tab-panel');
+
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', () => {
+          const target = tab.dataset.tab;
+          /* Переключаем активную вкладку */
+          tabs.forEach((t) => {
+            const active = t === tab;
+            t.classList.toggle('tab--active', active);
+            t.setAttribute('aria-selected', String(active));
+          });
+          /* Переключаем панели */
+          panels.forEach((panel) => {
+            const active = panel.dataset.panel === target;
+            panel.classList.toggle('tab-panel--active', active);
+            panel.hidden = !active;
+          });
+        });
+      });
+
+      /* ============================================================
+         6. КНОПКИ «ЗАПИСАТЬСЯ» В КАРТОЧКАХ УСЛУГ И МАСТЕРОВ
+         ============================================================ */
+      const serviceTypeSelect = document.getElementById('serviceType');
+      const serviceSelect = document.getElementById('service');
+      const masterSelect = document.getElementById('master');
+      const bookingSection = document.getElementById('booking');
+
+      /* Прокрутка к форме и предзаполнение */
+      function scrollToBooking() {
+        bookingSection.scrollIntoView({ behavior: 'smooth' });
+      }
+
+      /* Обновить список услуг в форме по типу */
+      function updateServiceOptions(type) {
+        serviceSelect.innerHTML = '<option value="">— выберите —</option>';
+        if (type && SERVICES[type]) {
+          SERVICES[type].forEach((s) => {
+            const opt = document.createElement('option');
+            opt.value = s;
+            opt.textContent = s;
+            serviceSelect.appendChild(opt);
+          });
+          serviceSelect.disabled = false;
+        } else {
+          serviceSelect.disabled = true;
+        }
+      }
+
+      /* Карточки услуг */
+      document.querySelectorAll('.service-card__btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const type = btn.dataset.serviceType;
+          const service = btn.dataset.service;
+          serviceTypeSelect.value = type;
+          updateServiceOptions(type);
+          serviceSelect.value = service;
+          scrollToBooking();
+        });
+      });
+
+      /* Карточки мастеров */
+      document.querySelectorAll('.master-card__btn').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          masterSelect.value = btn.dataset.master;
+          scrollToBooking();
+        });
+      });
+
+      /* При смене типа услуги — обновляем список услуг */
+      serviceTypeSelect.addEventListener('change', () => {
+        updateServiceOptions(serviceTypeSelect.value);
+      });
+
+      /* ============================================================
+         7. КАЛЕНДАРЬ НА ЧИСТОМ JS
+         ============================================================ */
+      const dateInput = document.getElementById('date');
+      const calendar = document.getElementById('calendar');
+      let calYear, calMonth;       /* текущий отображаемый месяц */
+      let selectedDate = null;     /* выбранная дата (Date) */
+
+      /* Названия месяцев и дней недели */
+      const MONTHS = [
+        'Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь',
+        'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь',
+      ];
+      const WEEKDAYS = ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Вс'];
+
+      /* Форматирование даты в ДД.ММ.ГГГГ */
+      function formatDate(d) {
+        const dd = String(d.getDate()).padStart(2, '0');
+        const mm = String(d.getMonth() + 1).padStart(2, '0');
+        return `${dd}.${mm}.${d.getFullYear()}`;
+      }
+
+      /* Рендер календаря */
+      function renderCalendar() {
+        const today = new Date();
+        today.setHours(0, 0, 0, 0);
+
+        /* Первый день месяца */
+        const firstDay = new Date(calYear, calMonth, 1);
+        /* День недели первого числа (0=вс → сдвигаем под Пн-вс) */
+        let firstWeekday = firstDay.getDay();
+        firstWeekday = firstWeekday === 0 ? 6 : firstWeekday - 1;
+        /* Кол-во дней в месяце */
+        const daysInMonth = new Date(calYear, calMonth + 1, 0).getDate();
+
+        let html = `
+          <div class="cal__header">
+            <button class="cal__nav" id="calPrev" aria-label="Предыдущий месяц" type="button">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6" /></svg>
+            </button>
+            <span class="cal__title">${MONTHS[calMonth]} ${calYear}</span>
+            <button class="cal__nav" id="calNext" aria-label="Следующий месяц" type="button">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6" /></svg>
+            </button>
+          </div>
+          <div class="cal__weekdays">
+        `;
+        WEEKDAYS.forEach((w) => {
+          html += `<span class="cal__weekday">${w}</span>`;
+        });
+        html += `</div><div class="cal__days">`;
+
+        /* Пустые ячейки до первого дня */
+        for (let i = 0; i < firstWeekday; i++) {
+          html += `<span class="cal__day cal__day--empty"></span>`;
+        }
+
+        /* Дни месяца */
+        for (let d = 1; d <= daysInMonth; d++) {
+          const date = new Date(calYear, calMonth, d);
+          const isPast = date < today;
+          const isToday = date.getTime() === today.getTime();
+          const isSelected =
+            selectedDate &&
+            date.getDate() === selectedDate.getDate() &&
+            date.getMonth() === selectedDate.getMonth() &&
+            date.getFullYear() === selectedDate.getFullYear();
+
+          let cls = 'cal__day';
+          if (isPast) cls += ' cal__day--disabled';
+          if (isToday) cls += ' cal__day--today';
+          if (isSelected) cls += ' cal__day--selected';
+
+          html += `<button type="button" class="${cls}" data-day="${d}" ${isPast ? 'disabled' : ''}>${d}</button>`;
+        }
+        html += `</div>`;
+
+        calendar.innerHTML = html;
+
+        /* Навигация по месяцам */
+        document.getElementById('calPrev').addEventListener('click', (e) => {
+          e.stopPropagation();
+          calMonth--;
+          if (calMonth < 0) { calMonth = 11; calYear--; }
+          renderCalendar();
+        });
+        document.getElementById('calNext').addEventListener('click', (e) => {
+          e.stopPropagation();
+          calMonth++;
+          if (calMonth > 11) { calMonth = 0; calYear++; }
+          renderCalendar();
+        });
+
+        /* Выбор дня */
+        calendar.querySelectorAll('.cal__day:not(.cal__day--empty):not(.cal__day--disabled)').forEach((btn) => {
+          btn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const day = parseInt(btn.dataset.day, 10);
+            selectedDate = new Date(calYear, calMonth, day);
+            dateInput.value = formatDate(selectedDate);
+            /* Активируем выбор времени */
+            populateTimeSlots();
+            renderCalendar();
+            calendar.hidden = true;
+            clearError('date');
+          });
+        });
+      }
+
+      /* Открытие/закрытие календаря */
+      dateInput.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (calendar.hidden) {
+          /* Инициализируем текущим месяцем при первом открытии */
+          if (!calYear) {
+            const now = new Date();
+            calYear = now.getFullYear();
+            calMonth = now.getMonth();
+          }
+          renderCalendar();
+          calendar.hidden = false;
+        } else {
+          calendar.hidden = true;
+        }
+      });
+
+      /* Закрытие календаря по клику вне него */
+      document.addEventListener('click', (e) => {
+        if (!calendar.hidden && !calendar.contains(e.target) && e.target !== dateInput) {
+          calendar.hidden = true;
+        }
+      });
+
+      /* ============================================================
+         8. ВРЕМЕННЫЕ СЛОТЫ
+         ============================================================ */
+      const timeSelect = document.getElementById('time');
+
+      function populateTimeSlots() {
+        timeSelect.innerHTML = '<option value="">— выберите время —</option>';
+        /* Эмуляция: случайно делаем 2 слота занятыми */
+        const busy = new Set();
+        while (busy.size < 2) {
+          busy.add(Math.floor(Math.random() * TIME_SLOTS.length));
+        }
+        TIME_SLOTS.forEach((slot, i) => {
+          const opt = document.createElement('option');
+          opt.value = slot;
+          opt.textContent = busy.has(i) ? `${slot} — занято` : slot;
+          if (busy.has(i)) opt.disabled = true;
+          timeSelect.appendChild(opt);
+        });
+        timeSelect.disabled = false;
+      }
+
+      /* ============================================================
+         9. МАСКА ТЕЛЕФОНА (+7)
+         ============================================================ */
+      const phoneInput = document.getElementById('phone');
+
+      phoneInput.addEventListener('input', () => {
+        /* Оставляем только цифры */
+        let digits = phoneInput.value.replace(/\D/g, '');
+        /* Убираем ведущие 7 или 8, чтобы нормализовать */
+        if (digits.startsWith('8')) digits = digits.substring(1);
+        if (digits.startsWith('7')) digits = digits.substring(1);
+        digits = digits.substring(0, 10); /* 10 цифр после +7 */
+
+        let formatted = '+7';
+        if (digits.length > 0) formatted += ` (${digits.substring(0, 3)}`;
+        if (digits.length >= 3) formatted += `) ${digits.substring(3, 6)}`;
+        if (digits.length >= 6) formatted += `-${digits.substring(6, 8)}`;
+        if (digits.length >= 8) formatted += `-${digits.substring(8, 10)}`;
+        phoneInput.value = formatted;
+      });
+
+      /* ============================================================
+         10. ВАЛИДАЦИЯ И ОТПРАВКА ФОРМЫ
+         ============================================================ */
+      const form = document.getElementById('bookingForm');
+      const successBlock = document.getElementById('bookingSuccess');
+      const resetBtn = document.getElementById('resetBtn');
+
+      /* Показать ошибку поля */
+      function showError(fieldId, message) {
+        const input = document.getElementById(fieldId);
+        const errorEl = document.querySelector(`[data-error-for="${fieldId}"]`);
+        if (input) input.classList.add('field__input--error');
+        if (errorEl) errorEl.textContent = message;
+      }
+
+      /* Скрыть ошибку поля */
+      function clearError(fieldId) {
+        const input = document.getElementById(fieldId);
+        const errorEl = document.querySelector(`[data-error-for="${fieldId}"]`);
+        if (input) input.classList.remove('field__input--error');
+        if (errorEl) errorEl.textContent = '';
+      }
+
+      /* Очистка всех ошибок */
+      function clearAllErrors() {
+        ['serviceType', 'service', 'master', 'date', 'time', 'name', 'phone', 'email'].forEach(clearError);
+      }
+
+      /* Валидация email */
+      function isValidEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email);
+      }
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault(); /* форма не перезагружает страницу */
+        clearAllErrors();
+        let valid = true;
+
+        /* Тип услуги */
+        if (!serviceTypeSelect.value) {
+          showError('serviceType', 'Выберите тип услуги');
+          valid = false;
+        }
+        /* Услуга */
+        if (!serviceSelect.value) {
+          showError('service', 'Выберите услугу');
+          valid = false;
+        }
+        /* Мастер */
+        if (!masterSelect.value) {
+          showError('master', 'Выберите мастера');
+          valid = false;
+        }
+        /* Дата */
+        if (!dateInput.value) {
+          showError('date', 'Выберите дату');
+          valid = false;
+        }
+        /* Время */
+        if (!timeSelect.value) {
+          showError('time', 'Выберите время');
+          valid = false;
+        }
+        /* Имя */
+        const nameVal = document.getElementById('name').value.trim();
+        if (nameVal.length < 2) {
+          showError('name', 'Введите имя (минимум 2 символа)');
+          valid = false;
+        }
+        /* Телефон — проверяем, что 10 цифр после +7 */
+        const phoneDigits = phoneInput.value.replace(/\D/g, '');
+        if (phoneDigits.length !== 11) {
+          showError('phone', 'Введите корректный телефон');
+          valid = false;
+        }
+        /* Email */
+        const emailVal = document.getElementById('email').value.trim();
+        if (!isValidEmail(emailVal)) {
+          showError('email', 'Введите корректный email');
+          valid = false;
+        }
+
+        if (!valid) return;
+
+        /* Имитация отправки: показываем success, скрываем форму, сбрасываем */
+        form.hidden = true;
+        successBlock.hidden = false;
+
+        /* Сброс формы после небольшой задержки (визуально приятнее) */
+        setTimeout(() => {
+          form.reset();
+          serviceSelect.disabled = true;
+          serviceSelect.innerHTML = '<option value="">— сначала выберите тип —</option>';
+          timeSelect.disabled = true;
+          timeSelect.innerHTML = '<option value="">— выберите дату —</option>';
+          selectedDate = null;
+          dateInput.value = '';
+          calYear = null;
+        }, 300);
+      });
+
+      /* Кнопка «Записаться снова» */
+      resetBtn.addEventListener('click', () => {
+        successBlock.hidden = true;
+        form.hidden = false;
+      });
+
+      /* Очистка ошибок при вводе */
+      ['serviceType', 'service', 'master', 'date', 'time', 'name', 'phone', 'email'].forEach((id) => {
+        const el = document.getElementById(id);
+        if (el) {
+          el.addEventListener('input', () => clearError(id));
+          el.addEventListener('change', () => clearError(id));
+        }
+      });
+
+      /* ============================================================
+         11. СЛАЙДЕР ОТЗЫВОВ
+         ============================================================ */
+      const reviewsData = [
+        {
+          name: 'Марина К.',
+          rating: 5,
+          text: 'Записалась к Анне на окрашивание — результат превзошёл все ожидания! Цвет точно по фото, волосы мягкие. Удобно, что записалась онлайн за минуту.',
+        },
+        {
+          name: 'Алексей В.',
+          rating: 5,
+          text: 'Дмитрий — лучший барбер в городе. Стрижка и борода идеально под мой стиль. Онлайн-запись экономит кучу времени, рекомендую!',
+        },
+        {
+          name: 'Светлана П.',
+          rating: 4,
+          text: 'Ходила к Елене на лимфодренажный массаж. После курса почувствовала лёгкость, ушли отёки. Атмосфера в салоне очень уютная.',
+        },
+        {
+          name: 'Игорь М.',
+          rating: 5,
+          text: 'Общий расслабляющий массаж у Ольги — это то, что нужно после рабочей недели. Профессионал высшего класса, буду ходить регулярно.',
+        },
+        {
+          name: 'Наталья С.',
+          rating: 5,
+          text: 'Впервые попробовала онлайн-запись и осталась довольна. Выбрала услугу, мастера, время — и всё! Никаких звонков и ожидания. Сервис на высоте.',
+        },
+      ];
+
+      const sliderTrack = document.getElementById('sliderTrack');
+      const sliderDots = document.getElementById('sliderDots');
+      const sliderPrev = document.getElementById('sliderPrev');
+      const sliderNext = document.getElementById('sliderNext');
+      let currentSlide = 0;
+      let autoSlideTimer;
+
+      /* Рендер звёзд рейтинга */
+      function renderStars(rating) {
+        let stars = '';
+        for (let i = 0; i < 5; i++) {
+          stars += `<svg viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>`;
+        }
+        return `<div class="review-card__stars">${stars}</div>`;
+      }
+
+      /* Рендер всех слайдов */
+      function renderReviews() {
+        sliderTrack.innerHTML = reviewsData
+          .map(
+            (r) => `
+          <div class="review-slide">
+            <div class="review-card">
+              ${renderStars(r.rating)}
+              <p class="review-card__text">«${r.text}»</p>
+              <p class="review-card__author">${r.name}</p>
+            </div>
+          </div>
+        `
+          )
+          .join('');
+
+        /* Точки-индикаторы */
+        sliderDots.innerHTML = reviewsData
+          .map((_, i) => `<button class="slider__dot${i === 0 ? ' active' : ''}" data-slide="${i}" aria-label="Отзыв ${i + 1}"></button>`)
+          .join('');
+      }
+
+      /* Перейти к слайду */
+      function goToSlide(index) {
+        currentSlide = (index + reviewsData.length) % reviewsData.length;
+        sliderTrack.style.transform = `translateX(-${currentSlide * 100}%)`;
+        sliderDots.querySelectorAll('.slider__dot').forEach((dot, i) => {
+          dot.classList.toggle('active', i === currentSlide);
+        });
+      }
+
+      /* Автоперелистывание */
+      function startAutoSlide() {
+        stopAutoSlide();
+        autoSlideTimer = setInterval(() => goToSlide(currentSlide + 1), 5000);
+      }
+      function stopAutoSlide() {
+        if (autoSlideTimer) clearInterval(autoSlideTimer);
+      }
+
+      sliderPrev.addEventListener('click', () => {
+        goToSlide(currentSlide - 1);
+        startAutoSlide(); /* сброс таймера после ручного переключения */
+      });
+      sliderNext.addEventListener('click', () => {
+        goToSlide(currentSlide + 1);
+        startAutoSlide();
+      });
+      sliderDots.addEventListener('click', (e) => {
+        const dot = e.target.closest('.slider__dot');
+        if (dot) {
+          goToSlide(parseInt(dot.dataset.slide, 10));
+          startAutoSlide();
+        }
+      });
+
+      /* Пауза автоперелистывания при наведении */
+      const sliderEl = document.getElementById('reviewsSlider');
+      sliderEl.addEventListener('mouseenter', stopAutoSlide);
+      sliderEl.addEventListener('mouseleave', startAutoSlide);
+
+      /* Инициализация слайдера */
+      renderReviews();
+      startAutoSlide();
+
+      /* ============================================================
+         12. ИНИЦИАЛИЗАЦИЯ
+         ============================================================ */
+      onScroll(); /* корректное состояние шапки при загрузке */
+    </script>
+  </body>
+</html>
